@@ -1,0 +1,59 @@
+<!DocType html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Quizzical</title>
+        <link rel="shortcut icon" href="file:///C:/Users/user/Desktop/webdevelopment/quiz/title.PNG">
+        <link rel="stylesheet" href="quiz.css">
+        
+    </head>
+    <body>
+        <div class="box" id="questionScreen" >
+            <div class="title">Quizzical</div>
+            <div class="header">
+                <div class="score">Score:<span>0</span></div>
+                <div class="timer">Time Left:<span></span></div>
+            </div>
+            <div class="questions">
+                How can you catch a computer virus?
+            </div>
+            <div class="options">
+                <span onclick="checkAnswer(this)" data-opt="1"></span>
+                <span onclick="checkAnswer(this)" data-opt="2"></span>
+                <span onclick="checkAnswer(this)" data-opt="3"> </span>
+                <span onclick="checkAnswer(this)" data-opt="4"></span>
+            </div>
+            <div class="footer">
+                <button onclick="showNext()">Next
+                </buttton>
+                <button onclick="showResult(1)">Show Result
+                </button>
+            </div>
+        </div>
+        <div class="box" id="resultScreen" style="display:none"  >
+            <div class="title">
+                Quizzical
+            </div>
+            <div class="resultBox">
+                <label>Questions:</label>
+                <span id="totalQuestion">10</span>
+                <label>Attempt:</label>
+                <span id="attemptQuestion">0</span>
+                <label>Correct:</label>
+                <Span id="correctAnswer">0</span>
+                <label>Wrong:</label>
+                <Span id="wrongAnswer">0</span>
+            </div>
+            <div class="buttonBox">
+                <a href="quiz.html">Start Again</a>
+            </div>
+        </div>
+
+
+    </body>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="quiz.js"></script>
+
+</html>

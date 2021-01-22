@@ -1,0 +1,40 @@
+<!DocType html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Quizzical</title>
+        <link rel="shortcut icon" href="file:///C:/Users/LENOVO/Desktop/webdevelopment/quiz/title.PNG">
+        <link rel="stylesheet" href="quiz.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <img  class="logo" src="file:///C:/Users/LENOVO/Desktop/webdevelopment/quiz/title.PNG" alt="quiz algo">
+            </div>
+            <div class="right feature">
+                <h2>Welcome to Quizzical</h2>
+                <h3>Features:-</h3>
+                <ul>
+                    <li>10 Questions(20 sec each)</li>
+                    <li>200 Seconds Quiz</li>
+                    <li>Random Questions</li>
+                    <li>Get Result Any Time</li>
+                </ul>
+                <a class="start" href="Questions.html">Start Quiz</a>
+            </div>
+        </div>
+
+    </body>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="quiz.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".logo"),{
+            max:25,
+            scale:1.2,
+            speed:400
+        });
+    </script>
+</html>

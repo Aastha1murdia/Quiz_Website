@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,100&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:"Lato",sans-serif;
+    background-image:url("file:///C:/Users/LENOVO/Desktop/webdevelopment/quiz/backgroundimg.PNG");
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+}
+.container{                                                                     
+    margin-top:80px;
+    width:523px;
+    background-color:#fff;
+    box-shadow:0 0 50px 0 rgba(0,0,0,0.2);
+    height:300px;
+    padding:80px 90px;
+    border-radius:10px;
+}
+.left,.right{
+    width:50%;
+}
+.left img{
+    float:left;
+    margin-left:-85px;
+    margin-top:-39px;
+}
+.feature{
+    float:right;
+    margin-top:-300px;
+    margin-left:30px;
+}
+.right .start{
+    color:white;
+    background-color:#1818ec;
+    width:100%;
+    
+    border-radius:5px;
+    border:solid #1818ec;
+    margin-top:25px;
+    display:inline-block;
+    text-align:center;
+    padding:10px 0;
+    text-decoration:none;
+    outline:none;
+    font-weight:bold;
+}
+.feature ul {
+    margin-top:10px;
+    margin-left:47px;
+    font-weight:bold;
+    color:#8a3d8a;
+}
+.feature ul li{
+    margin-top:5px;
+}
+.right h2{
+    color:#1818ec;
+    font-weight:bold;
+    margin-left:20px;
+    
+}
+.right h3{
+    margin-top:20px;
+    color:purple;   
+    font-weight:bold;  
+    margin-left:30px; 
+}
+
+
+/* Question page start */
+.box{
+    background-color:#fff;
+    border-radius:10px;
+    box-shadow:0 0 50px rgba(0,0,0,0.2);
+    height:300px;
+    width:523px;
+    margin-top:80px;
+    padding:80px 90px;
+}
+.title{
+    color:#1818ec;
+    border-bottom:1px solid #1818ec;
+    padding-bottom:10px;
+    margin-top:-46px;
+    font-weight:bold;
+    font-family:Cursive;
+    font-size:30px; 
+}
+.header{
+    margin-bottom:30px;
+    display:flex;
+    justify-content:space-between;
+}
+.score,.timer{
+    border-radius:100px;
+    padding:10px 15px;
+    color:purple;
+    font-weight:bold;
+    border:1px solid #1818ec;
+    margin-top:20px;
+}
+.questions{
+    border-radius:10px;
+    color:white;
+    padding-top:5px;
+    padding-left:10px;
+    background-color:purple;
+    height:30px;
+    font-weight:bold;
+}
+.options span{
+    border-radius:10px;
+    color:black;
+    padding-top:10px;
+    padding-left:10px;
+    background-color:#f1f1f1;
+    height:40px;
+    font-weight:bold;
+    border: 1px solid #f1f1f1;
+}
+.options{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin:40px 0;
+    grid-gap:15px;
+}
+.footer{
+    display:flex;
+    justify-content:space-between;
+}
+.footer button{
+    background-color:#1818ec;
+    border-radius:5px;
+    padding:3px 9px;
+    color:white;
+    border:0;
+    outline:none;
+    font-size:20px;
+}
+.resultBox{
+    margin-bottom:30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-row-gap:15px;
+    font-size:20px;
+    color:purple;
+    margin-top:50px;
+}
+.resultBox label{
+    font-weight:bold;
+}
+.resultBox *:nth-child(odd){
+    text-align:right;
+}
+.resultBox span{
+    font-weight:600;
+}
+.buttonBox{
+    border-top:1px solid #1818ec;
+    padding-top:15px;
+    text-align:center;
+}
+.buttonBox a{
+    background-color:#1818ec;
+    border-radius:50px;
+    border:0;
+    text-decoration:none;
+    color:white;
+    outline:none;
+    padding:7px 15px;
+    margin-top:30px;
+    font-weight:bold;
+}
+
+.options span.right{
+    background-color:#00ab00;
+    border-color:#00ab00;
+    color:#fff;
+    width:250px;
+}
+.options span.wrong{
+    background-color:#ff3b0e;
+    border-color:#ff3b0e;
+    color:#fff;
+}
+/* Question page End */
+/*media query*/
+@media screen and (max-width:523px){
+    .left{
+        display:none;
+    }
+    .container{
+        margin-top:359px;
+        width:523px;
+    }
+    .right{
+        width:100%;
+    }
+    .options{
+        grid-template:1fr 1fr;
+    }
+}
+/*media query end*/
